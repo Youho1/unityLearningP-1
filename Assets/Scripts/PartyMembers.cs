@@ -18,6 +18,11 @@ public class PartyMembers : MonoBehaviour
         foreach (var member in questPartyMembers)
         {
             Debug.LogFormat("Member:{0}", member);
+
+            if (member == "Merlin the Wise")
+            {
+                Debug.Log("君がいてくれて嬉しいよ、マーリン！");
+            }
         }
     }
 }
