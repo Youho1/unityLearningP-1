@@ -5,16 +5,17 @@ using UnityEngine;
 
 public class ItemList : MonoBehaviour
 {
+    private Dictionary<string, int> Items;
     private void Start()
     {
-        Dictionary<string, int> ItemInventory = new Dictionary<string, int>()
+        Items = new Dictionary<string, int>()
         {
             {"position", 5},
             {"Antidote", 8},
             {"Aspirin", 1}
         };
 
-        foreach (var item in ItemInventory)
+        foreach (var item in Items)
         { 
             Debug.LogFormat("Item: {0} - {1}g", item.Key, item.Value);  
         }
