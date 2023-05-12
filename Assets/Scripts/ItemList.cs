@@ -13,7 +13,11 @@ public class ItemList : MonoBehaviour
             {"Antidote", 8},
             {"Aspirin", 1}
         };
+
+        foreach (var item in ItemInventory)
+        { 
+            Debug.LogFormat("Item: {0} - {1}g", item.Key, item.Value);  
+        }
         
-        Debug.LogFormat("Item: {0}", ItemInventory.Count);
     }
 }
