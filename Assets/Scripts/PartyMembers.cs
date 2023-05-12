@@ -13,7 +13,7 @@ public class PartyMembers : MonoBehaviour
             "Merlin the Wise",
             "Sterling the Knight"
         };
-        
+
         //Debug.LogFormat("Party Members: {0}", questPartyMembers.Count);
         foreach (var member in questPartyMembers)
         {
