@@ -34,29 +34,9 @@ public class Character : MonoBehaviour
 
     public void ResetName(string newName)
     {
-        _name = newName;
+        _name = newName; 
     }
     
-    private void Start()
-    {
-        Character myCharacter = new Character("Zero", new EXP(), new Level());
-        Debug.Log($"playername:{myCharacter._name}");
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Add(new EXP(10), myCharacter);
-        myCharacter._exp.Subtract(new EXP(20));
-        myCharacter._exp.Subtract(new EXP(20));
-    }
 }
 
 public class EXP
