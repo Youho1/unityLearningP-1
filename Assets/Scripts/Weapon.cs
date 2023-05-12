@@ -1,5 +1,5 @@
 using UnityEngine;
-public class Weapon 
+public struct Weapon 
 {
     public string _name;
     public int _damage;
