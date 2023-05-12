@@ -7,7 +7,7 @@ public class PartyMembers : MonoBehaviour
 {
     private void Start()
     {
-        List<string> questPartyMembers = new List<string>()
+        var questPartyMembers = new List<string>()
         {
             "Grim the Barbarian",
             "Merlin the Wise",
