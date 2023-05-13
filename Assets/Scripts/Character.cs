@@ -68,6 +68,11 @@ public class EXP
         }
         Debug.Log($"Exp:{_exp}");
     }
+
+    public int Get()
+    {
+        return _exp;
+    }
 }
 
 public class Level
@@ -83,6 +88,11 @@ public class Level
     {
         _level++;
         Debug.Log("Level up!!!");
+    }
+
+    public int Get()
+    {
+        return _level;                                                                                                                         
     }
     /*
     public void Down()
